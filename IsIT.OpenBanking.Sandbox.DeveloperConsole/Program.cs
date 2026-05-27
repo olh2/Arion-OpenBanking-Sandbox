@@ -12,16 +12,16 @@ namespace IsIT.OpenBanking.Sandbox.DeveloperConsole
     class Program
     {
         // UserApplication api key obtained from Developer Portal
-        private static readonly string APIKEY = "[Place your ApiKey from the developer portal in here]";
+        private static readonly string APIKEY = "[a358807ac8aa404fa3ef6c77a259d027]";
         // User (PSU) identifier. Reserverd User from Developer Portal
-        private static readonly string NATIONAL_REGISTRY_ID = "[Place your created user's national registry id from the developer portal in here]";
+        private static readonly string NATIONAL_REGISTRY_ID = "[2910701599]";
         // Base path to api
         private static readonly string IOBWS_BASE_PATH = "https://apigwsandbox.arionbanki.is/psd2/api/v1"; // for production, use https://apigw.arionbanki.is/psd2/api/v1
 
         // ID of the request, unique to the call, as determined by the initiating party.
         private static string REQUESTID = Guid.NewGuid().ToString();
         // Access Token created in Developer Portal from UserApplication and User.
-        private static string ACCESS_TOKEN = "[Place your token from the developer portal in here]"; // To get access token on production, use https://curity-prod.arionbanki.is/oauth/v2/oauth-token
+        private static string ACCESS_TOKEN = "[eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBbsOtdGEgTWlzdCDDnsONIE1hZ27DunNkw7N0dGlyIiwiaHR0cHM6Ly9zY2hlbWFzLmFyaW9uYmFua2kuaXMvd3MvMjAyMC8wNS9zYW5kYm94L2NsYWltcy9hcGlrZXkiOiJhMzU4ODA3YWM4YWE0MDRmYTNlZjZjNzdhMjU5ZDAyNyIsImh0dHBzOi8vc2NoZW1hcy5hcmlvbmJhbmtpLmlzL3dzLzIwMjAvMDUvY2xhaW1zL2tlbm5pdGFsYSI6IjI5MTA3MDE1OTkiLCJodHRwczovL3NjaGVtYXMuYXJpb25iYW5raS5pcy93cy8yMDIwLzA1L2NsYWltcy9hcHBpZCI6IjVkODQ2Y2ExLWNjOGYtNGI4MC04MTFkLTVhOTMwN2Q3MWRjOSIsInNjcCI6InByb2ZpbGUsIG9wZW5iYW5raW5nLnJlYWQsIG9wZW5iYW5raW5nLnJlYWR3cml0ZSIsIm5iZiI6MTc3OTkxOTQxOSwiZXhwIjoxNzc5OTIzMDE5LCJpc3MiOiJBcmlvblNhbmRib3ggUHJvZCBJc3N1ZXIiLCJhdWQiOiJ1cm46aW9id3MifQ.ho3bjEcTRhNEMBMITiZj1TummJM46FA7agf3HohpdJQ]"; // To get access token on production, use https://curity-prod.arionbanki.is/oauth/v2/oauth-token
         // Wellknown OpenId enpoint on production can be found here: https://curity.arionbanki.is/oauth/v2/oauth-anonymous/.well-known/openid-configuration
         
         // Use previously created Consent or call Create Consent.
