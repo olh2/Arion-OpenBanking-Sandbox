@@ -12,7 +12,7 @@ namespace IsIT.OpenBanking.Sandbox.DeveloperConsole
     class Program
     {
         // UserApplication api key obtained from Developer Portal
-        private static readonly string APIKEY = "[Place your ApiKey from the developer portal in here]";
+        private static readonly string APIKEY = "[a358807ac8aa404fa3ef6c77a259d027]";
         // User (PSU) identifier. Reserverd User from Developer Portal
         private static readonly string NATIONAL_REGISTRY_ID = "[Place your created user's national registry id from the developer portal in here]";
         // Base path to api
